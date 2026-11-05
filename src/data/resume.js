@@ -29,8 +29,7 @@ export const profile = {
   tagline:
     'I help brands grow online through data-driven SEO, social media marketing, Meta Ads and user-friendly websites — turning traffic into real leads.',
   about: [
-    'I’m a Digital Analytics professional with expertise in website design, SEO and performance tracking. I develop responsive websites using HTML, CSS and WordPress, and use Google Analytics, Tag Manager and SEO strategies to optimise traffic and conversions.',
-    'With an engineering background in Electronics & Communication, I bring strong problem-solving skills and a passion for creating data-driven, user-friendly web experiences.',
+    '  Digital Marketing Executive passionate about content creation, social media, and digital advertising. I create engaging content, manage brand platforms, and use digital marketing strategies to help businesses grow online.',
   ],
   // Lives in /public
   photo: '/profile.png',
@@ -45,7 +44,7 @@ export const contacts = [
 
 export const stats = [
   { value: '4+', label: 'Brands managed' },
-  { value: '3', label: 'Social platforms' },
+  { value: '4', label: 'Social platforms' },
   { value: '10+', label: 'Tools mastered' },
 ];
 
