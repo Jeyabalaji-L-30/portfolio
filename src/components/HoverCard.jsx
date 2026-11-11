@@ -30,7 +30,7 @@ export default function HoverCard({ icon, tag, number, title, subtitle, children
         '&:hover .hover-number': { WebkitTextStroke: `1px ${alpha(ACCENT, 0.6)}`, transform: 'translateY(-4px)' },
       }}
     >
-      <Box sx={{ p: { xs: 3, md: 4 }, height: '100%' }}>
+      <Box sx={{ p: { xs: 3, md: 4 }, height: '100%', display: 'flex', flexDirection: 'column' }}>
         {number && (
           <Typography
             aria-hidden
@@ -65,7 +65,7 @@ export default function HoverCard({ icon, tag, number, title, subtitle, children
           {title}
         </Typography>
         {subtitle && <Typography sx={{ mt: 1, color: 'text.secondary' }}>{subtitle}</Typography>}
-        {children && <Box sx={{ mt: 2.5 }}>{children}</Box>}
+        {children && <Box sx={{ mt: 2.5, flexGrow: 1, display: 'flex', flexDirection: 'column' }}>{children}</Box>}
       </Box>
     </GlowCard>
   );

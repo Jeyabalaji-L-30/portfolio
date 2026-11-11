@@ -18,7 +18,7 @@ export default function Contact({ contacts }) {
   const email = contacts.find((c) => c.label === 'Email');
 
   return (
-    <Section id="contact" glow="left">
+    <Section id="contact" variant="alt" glow="right">
       <Grid container spacing={{ xs: 6, md: 8 }} alignItems="center">
         <Grid size={{ xs: 12, md: 5 }}>
           <Reveal from="left">

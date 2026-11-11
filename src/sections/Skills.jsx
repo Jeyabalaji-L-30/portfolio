@@ -195,7 +195,7 @@ export default function Skills({ groups }) {
   const half = Math.ceil(allSkills.length / 2);
 
   return (
-    <Section id="skills" glow="left" eyebrow="Skills" title="What I bring to the" highlight="table">
+    <Section id="skills" variant="alt" glow="right" eyebrow="Skills" title="What I bring to the" highlight="table">
       <Grid container spacing={3}>
         <Grid size={{ xs: 12, md: 4 }}>
           <Reveal from="left">

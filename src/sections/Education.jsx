@@ -5,7 +5,7 @@ import Reveal from '../components/Reveal';
 
 export default function Education({ items }) {
   return (
-    <Section id="education" variant="alt" glow="right" eyebrow="Education & Certifications" title="Learning that" highlight="shaped me">
+    <Section id="education" glow="left" eyebrow="Education & Certifications" title="Learning that" highlight="shaped me">
       <Grid container spacing={3}>
         {items.map((item, i) => (
           <Grid key={item.title} size={{ xs: 12, md: 4 }}>

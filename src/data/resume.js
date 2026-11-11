@@ -18,6 +18,12 @@ import WorkOutlineRoundedIcon from '@mui/icons-material/WorkOutlineRounded';
 import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
+import LayersOutlinedIcon from '@mui/icons-material/LayersOutlined';
+import CleaningServicesRoundedIcon from '@mui/icons-material/CleaningServicesRounded';
+import StorefrontRoundedIcon from '@mui/icons-material/StorefrontRounded';
+import RecyclingRoundedIcon from '@mui/icons-material/RecyclingRounded';
+import DevicesRoundedIcon from '@mui/icons-material/DevicesRounded';
+import GroupsRoundedIcon from '@mui/icons-material/GroupsRounded';
 
 // All portfolio content lives here so the components stay purely presentational.
 
@@ -59,6 +65,7 @@ export const navLinks = [
   { id: 'home', label: 'Home', icon: HomeRoundedIcon },
   { id: 'about', label: 'About', icon: PersonOutlineRoundedIcon },
   { id: 'experience', label: 'Experience', icon: WorkOutlineRoundedIcon },
+  { id: 'projects', label: 'Projects', icon: LayersOutlinedIcon },
   { id: 'skills', label: 'Skills', icon: AutoAwesomeOutlinedIcon },
   { id: 'education', label: 'Education', icon: SchoolOutlinedIcon },
   { id: 'contact', label: 'Contact', icon: MailOutlineRoundedIcon },
@@ -161,5 +168,63 @@ export const education = [
     title: 'Digital Marketing Certification',
     subtitle: 'Getin Technologies',
     icon: WorkspacePremiumRoundedIcon,
+  },
+];
+
+export const projects = [
+  {
+    number: '01',
+    title: 'MCG Services',
+    category: 'Cleaning Services | Tamil Nadu',
+    icon: CleaningServicesRoundedIcon,
+    services: ['Video Shooting', 'Video Editing', 'Social Media', 'Content Creation', 'Reels', 'Meta Ads', 'Poster Design'],
+    instagram: {
+      handle: '@mcg_services',
+      href: 'https://www.instagram.com/mcg_services/',
+    },
+  },
+  {
+    number: '02',
+    title: 'MAHINZO',
+    category: 'Local E-Commerce App | Aruppukottai',
+    icon: StorefrontRoundedIcon,
+    services: ['Video Shooting', 'Video Editing', 'Content Creation', 'Social Media', 'Local Marketing', 'Poster Design'],
+    instagram: {
+      handle: '@mahinzo_25',
+      href: 'https://www.instagram.com/mahinzo_25/',
+    },
+  },
+  {
+    number: '03',
+    title: 'KASUPAI',
+    category: 'Waste Collection Services',
+    icon: RecyclingRoundedIcon,
+    services: ['Video Shooting', 'Video Editing', 'Content Creation', 'Social Media', 'Reels'],
+    instagram: {
+      handle: '@kasupai_26',
+      href: 'https://www.instagram.com/kasupai_26/',
+    },
+  },
+  {
+    number: '04',
+    title: 'IT Malar Pvt Ltd',
+    category: 'IT & Digital Solutions',
+    icon: DevicesRoundedIcon,
+    services: ['Video Shooting', 'Video Editing', 'Social Media', 'Content Creation', 'Meta Ads', 'SEO'],
+    instagram: {
+      handle: '@itmalar_25',
+      href: 'https://www.instagram.com/itmalar_25/',
+    },
+  },
+  {
+    number: '05',
+    title: 'Mahin Facility',
+    category: 'Manpower & Facility Services',
+    icon: GroupsRoundedIcon,
+    services: ['Poster Design', 'Content Creation', 'Social Media', 'Reels'],
+    instagram: {
+      handle: '@mahin_facility',
+      href: 'https://www.instagram.com/mahin_facility/',
+    },
   },
 ];
