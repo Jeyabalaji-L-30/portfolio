@@ -66,8 +66,8 @@ export const navLinks = [
   { id: 'about', label: 'About', icon: PersonOutlineRoundedIcon },
   { id: 'experience', label: 'Experience', icon: WorkOutlineRoundedIcon },
   { id: 'projects', label: 'Projects', icon: LayersOutlinedIcon },
-  { id: 'skills', label: 'Skills', icon: AutoAwesomeOutlinedIcon },
-  { id: 'education', label: 'Education', icon: SchoolOutlinedIcon },
+  // { id: 'skills', label: 'Skills', icon: AutoAwesomeOutlinedIcon },
+  // { id: 'education', label: 'Education', icon: SchoolOutlinedIcon },
   { id: 'contact', label: 'Contact', icon: MailOutlineRoundedIcon },
 ];
 
