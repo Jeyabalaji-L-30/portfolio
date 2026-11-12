@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Grid from '@mui/material/Grid2';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -7,6 +8,7 @@ import { keyframes } from '@mui/material/styles';
 import Section from '../components/Section';
 import SectionHeader from '../components/SectionHeader';
 import ContactCard from '../components/ContactCard';
+import EmailDialog from '../components/EmailDialog';
 import Reveal from '../components/Reveal';
 
 const glowPulse = keyframes`
@@ -14,7 +16,8 @@ const glowPulse = keyframes`
   50% { box-shadow: 0 0 32px 4px rgba(34, 211, 238, .25); }
 `;
 
-export default function Contact({ contacts }) {
+export default function Contact({ contacts, emailJs }) {
+  const [open, setOpen] = useState(false);
   const email = contacts.find((c) => c.label === 'Email');
 
   return (
@@ -31,7 +34,7 @@ export default function Contact({ contacts }) {
               <Button
                 variant="contained"
                 size="large"
-                href={email.href}
+                onClick={() => setOpen(true)}
                 endIcon={<SendRoundedIcon />}
                 sx={{ mt: 4, px: 4.5, py: 1.6, animation: `${glowPulse} 2.8s ease-in-out infinite` }}
               >
@@ -50,6 +53,13 @@ export default function Contact({ contacts }) {
           </Box>
         </Grid>
       </Grid>
+      <EmailDialog
+        open={open}
+        onClose={() => setOpen(false)}
+        recipientEmail={email?.value}
+        recipientHref={email?.href}
+        emailJs={emailJs}
+      />
     </Section>
   );
 }

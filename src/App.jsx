@@ -7,7 +7,7 @@ import Projects from './sections/Projects';
 import Skills from './sections/Skills';
 import Education from './sections/Education';
 import Contact from './sections/Contact';
-import { profile, contacts, stats, focusAreas, navLinks, experience, projects, skillGroups, education } from './data/resume';
+import { profile, contacts, stats, focusAreas, navLinks, experience, projects, skillGroups, education, emailJs } from './data/resume';
 
 export default function App() {
   return (
@@ -20,7 +20,7 @@ export default function App() {
         <Projects items={projects} />
         <Skills groups={skillGroups} />
         <Education items={education} />
-        <Contact contacts={contacts} />
+        <Contact contacts={contacts} emailJs={emailJs} />
       </main>
       <Footer profile={profile} links={navLinks} contacts={contacts} />
     </>
